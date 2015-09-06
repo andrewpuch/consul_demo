@@ -1,0 +1,10 @@
+{
+    "bootstrap" : false,
+    "server" : true,
+    "datacenter" : "aws-tutorial-series",
+    "data_dir" : "/tmp/consul",
+    "encrypt" : "__ENCRYPT__",
+    "log_level" : "INFO",
+    "enable_syslog" : true,
+    "start_join" : ["__BOOTSTRAP_PRIVATE_IP__"]
+}
