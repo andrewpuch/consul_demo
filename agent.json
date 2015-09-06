@@ -13,5 +13,28 @@
             "address": "127.0.0.1",
             "port": 80
         }
+    ],
+    "checks": [
+        {
+            "id" : "check_cpu_utilization",
+            "notes" : "Greater than 50% warn, greater than 75% fail.",
+            "name" : "CPU Utilization",
+            "script" : "/root/consul_demo/scripts/cpu_utilization.sh",
+            "interval" : "10s"
+        },
+        {
+          "id" : "check_mem_utilization",
+          "notes" : "Greater than 50% warn, greater than 75% fail.",
+          "name" : "MEM Utilization",
+          "script" : "/root/consul_demo/scripts/mem_utilization.sh",
+          "interval" : "10s"
+        },
+        {
+          "id" : "check_hdd_utilization",
+          "notes" : "Greater than 50% warn, greater than 75% fail.",
+          "name" : "HDD Utilization",
+          "script" : "/root/consul_demo/scripts/hdd_utilization.sh",
+          "interval" : "10s"
+        }
     ]
 }

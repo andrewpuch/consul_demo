@@ -6,5 +6,28 @@
     "encrypt" : "__ENCRYPT__",
     "log_level" : "INFO",
     "enable_syslog" : true,
-    "start_join" : ["__BOOTSTRAP_PRIVATE_IP__"]
+    "start_join" : ["__BOOTSTRAP_PRIVATE_IP__"],
+    "checks": [
+        {
+            "id" : "check_cpu_utilization",
+            "notes" : "Greater than 50% warn, greater than 75% fail.",
+            "name" : "CPU Utilization",
+            "script" : "/root/consul_demo/scripts/cpu_utilization.sh",
+            "interval" : "10s"
+        },
+        {
+          "id" : "check_mem_utilization",
+          "notes" : "Greater than 50% warn, greater than 75% fail.",
+          "name" : "MEM Utilization",
+          "script" : "/root/consul_demo/scripts/mem_utilization.sh",
+          "interval" : "10s"
+        },
+        {
+          "id" : "check_hdd_utilization",
+          "notes" : "Greater than 50% warn, greater than 75% fail.",
+          "name" : "HDD Utilization",
+          "script" : "/root/consul_demo/scripts/hdd_utilization.sh",
+          "interval" : "10s"
+        }
+    ]
 }
