@@ -36,6 +36,7 @@ nohup consul agent -config-dir /root/consul_demo/config.json &
 
 # Consul Agent Server
 ---------------------------
+apt-get install apache2
 cd /root/consul_demo
 cp agent.json config.json
 
