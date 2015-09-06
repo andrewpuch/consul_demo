@@ -21,7 +21,7 @@ rm -f 0.5.2_web_ui.zip
 cd /root/consul_demo
 cp bootstrap.json config.json
 
-*Edit __BOOTSTRAP_PRIVATE_IP__ and __BOOTSTRAP_PUBLIC_IP__ and __ENCRYPT__*
+*Edit __BOOTSTRAP_PRIVATE_IP__ and __ENCRYPT__*
 
 nohup consul agent -config-dir /root/consul_demo/config.json &
 
