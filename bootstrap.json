@@ -3,6 +3,7 @@
     "server" : true,
     "datacenter" : "aws-tutorial-series",
     "data_dir" : "/tmp/consul",
+    "ui_dir" : "/root/dist",
     "encrypt" : "__ENCRYPT__",
     "log_level" : "INFO",
     "enable_syslog" : true,
@@ -14,6 +15,6 @@
         "http": "__BOOTSTRAP_PUBLIC_IP__"
     },
     "ports" : {
-        "http" : "80"
+        "http" : 80
     }
 }
