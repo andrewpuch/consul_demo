@@ -12,7 +12,7 @@
         "Access-Control-Allow-Origin" : "*"
     },
     "addresses" : {
-        "http": "__BOOTSTRAP_PUBLIC_IP__"
+        "http": "__BOOTSTRAP_PRIVATE_IP__"
     },
     "ports" : {
         "http" : 80
