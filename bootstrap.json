@@ -39,5 +39,5 @@
           "script": "/root/consul_demo/scripts/hdd_utilization.sh",
           "interval": "10s"
         }
-    ],
+    ]
 }
