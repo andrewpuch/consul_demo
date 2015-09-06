@@ -1,4 +1,4 @@
-# consul_demo
+# Consul Demo
 Consul service discovery tool examples. 
 
 ```
