@@ -8,6 +8,7 @@
     "log_level" : "INFO",
     "enable_syslog" : true,
     "start_join" : ["__BOOTSTRAP_PRIVATE_IP__"],
+    "node_name": "__NODE_NAME__",
     "http_api_response_headers" : {
         "Access-Control-Allow-Origin" : "*"
     },
