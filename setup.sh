@@ -5,8 +5,10 @@ usage() {
     echo "${0} <type>"
     echo ""
     echo "Arguments"
-    echo "Encrypt    - [REQUIRED] This is acquired by running consul keygen."
-    echo "Private IP - [REQUIRED] The private IP address of the bootstrap server."
+    echo "Hostname     - [REQUIRED] The hostname you want to provide for your consul agent."
+    echo "Encrypt      - [REQUIRED] This is acquired by running consul keygen."
+    echo "Private IP 1 - [REQUIRED] The private IP address of the bootstrap server."
+    echo "Private IP 2 - [REQUIRED] The private IP address of the non bootstrap server."
     echo ""
 
     return
