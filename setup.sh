@@ -2,7 +2,7 @@
 
 usage() {
     echo ""
-    echo "${0} <type>"
+    echo "${0} <hostname> <encrypt> <private ip 1> <private ip 2>"
     echo ""
     echo "Arguments"
     echo "Hostname     - [REQUIRED] The hostname you want to provide for your consul agent."
