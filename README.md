@@ -34,13 +34,13 @@ cp server.json config.json
 ```
 # Consul Agent Server
 ---------------------------
-apt-get install apache2
+apt-get install apache2 -y
 cd /root/consul_demo
 cp agent.json config.json
 ```
 
 ```
-./setup.sh ENCRYPT_KEY PRIVATE_IP_OF_BOOTSTRAP_SERVER
+./setup.sh ENCRYPT_KEY IP_OF_BOOTSTRAP IP_NON_BOOTSTRAP
 nohup consul agent -config-dir /root/consul_demo/config.json &
 
 # Now lets test.
