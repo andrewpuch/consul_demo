@@ -16,11 +16,11 @@ git clone https://github.com/andrewpuch/consul_demo.git
 ```
 # Bootstrap / Web UI Server
 ---------------------------
-consul keygen # Save this!
 wget https://dl.bintray.com/mitchellh/consul/0.5.2_web_ui.zip
 unzip 0.5.2_web_ui.zip
 rm -f 0.5.2_web_ui.zip
 cd /root/consul_demo
+consul keygen # Save this!
 cp bootstrap.json config.json
 ```
 
