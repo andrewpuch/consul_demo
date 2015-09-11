@@ -40,7 +40,7 @@ cp agent.json config.json
 ```
 
 ```
-./setup.sh ENCRYPT_KEY IP_OF_BOOTSTRAP IP_NON_BOOTSTRAP
+./setup.sh HOSTNAME ENCRYPT_KEY IP_OF_BOOTSTRAP IP_NON_BOOTSTRAP
 nohup consul agent -config-dir /root/consul_demo/config.json &
 
 # Now lets test.
