@@ -22,7 +22,7 @@ rm -f 0.5.2_web_ui.zip
 cd /root/consul_demo
 cp bootstrap.json config.json
 
-# Save this keygen! Note, if your key has a slash in it you need to escape them for setup.sh. Or just regenerate one # until it doesn't have a slash :)
+# Save this keygen! Note, if your key has a slash in it you need to escape them for setup.sh. Or just regenerate one until it doesn't have a slash :)
 consul keygen 
 ```
 
