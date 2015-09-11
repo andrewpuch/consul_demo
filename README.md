@@ -2,6 +2,7 @@
 Consul service discovery tool examples. 
 
 ```
+# Run these on all consul servers.
 sudo su
 apt-get update
 apt-get install git unzip -y
