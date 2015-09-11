@@ -21,8 +21,10 @@ fi
 
 HOSTNAME=`hostname`
 ENCRYPT=$1
-PRIVATE_IP=$2
+PRIVATE_IP1=$2
+PRIVATE_IP2=$3
 
 sed -i -- "s/__NODE_NAME__/$HOSTNAME/g" /root/consul_demo/config.json
-sed -i -- "s/__BOOTSTRAP_PRIVATE_IP__/$PRIVATE_IP/g" /root/consul_demo/config.json
+sed -i -- "s/__BOOTSTRAP_PRIVATE_IP__/$PRIVATE_IP1/g" /root/consul_demo/config.json
+sed -i -- "s/__NON_BOOTSTRAP_PRIVATE_IP__/$PRIVATE_IP2/g" /root/consul_demo/config.json
 sed -i -- "s/__ENCRYPT__/$ENCRYPT/g" /root/consul_demo/config.json
